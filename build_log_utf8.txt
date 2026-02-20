@@ -1,0 +1,49 @@
+﻿
+> simaak@0.1.0 build
+> next build
+
+node.exe : ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ΓÜá Warning: Ne...not be correct.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ We detected multiple lockfiles and selected the directory of C:\Users\DELL\Desktop\package-lock.json as the root 
+directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if 
+it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\DELL\Desktop\simaak\package-lock.json
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Experiments (use with caution):
+  ┬╖ optimizePackageImports
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 20.9s
+  Running TypeScript ...
+Failed to compile.
+
+./app/page.tsx:141:169
+Type error: Property 'num' does not exist on type '{ title: string; desc: string; }'.
+
+[0m [90m 139 |[39m                                     className[33m=[39m[32m"p-6 md:p-7 space-y-3 relative 
+group border-b sm:border-b-0 sm:border-r border-border last:border-r-0 last:border-b-0 hover:bg-surface-2 
+transition-colors duration-500"[39m
+ [90m 140 |[39m                                 [33m>[39m
+[31m[1m>[22m[39m[90m 141 |[39m                                     [33m<[39m[33mdiv[39m 
+className[33m=[39m[32m"text-3xl font-display font-bold text-charcoal/[0.04] group-hover:text-gold/15 
+transition-colors duration-700"[39m[33m>[39m{step[33m.[39mnum}[33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m     |[39m                                                                                                      
+                                                                   [31m[1m^[22m[39m
+ [90m 142 |[39m                                     [33m<[39m[33mh4[39m className[33m=[39m[32m"text-base 
+font-display font-bold text-charcoal group-hover:text-gold 
+transition-colors"[39m[33m>[39m{step[33m.[39mtitle}[33m<[39m[33m/[39m[33mh4[39m[33m>[39m
+ [90m 143 |[39m                                     [33m<[39m[33mp[39m className[33m=[39m[32m"text-sm 
+text-text-secondary leading-relaxed"[39m[33m>[39m{step[33m.[39mdesc}[33m<[39m[33m/[39m[33mp[39m[33m>[39m
+ [90m 144 |[39m                                     [33m<[39m[33mdiv[39m className[33m=[39m[32m"absolute 
+bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold to-transparent group-hover:w-full transition-all 
+duration-700"[39m [33m/[39m[33m>[39m[0m
+Next.js build worker exited with code: 1 and signal: null

@@ -1,0 +1,43 @@
+{
+  "name": "simaak",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "predev": "node -e \"const fs = require('fs'); try { if (fs.existsSync('.next')) fs.rmSync('.next', { recursive: true, force: true }); } catch (e) { console.warn('Warning: Could not clear .next cache (file locked). Proceeding...'); }\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@types/three": "^0.173.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.3",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20",
+    "lucide-react": "^0.475.0",
+    "next": "^16.1.6",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "simplex-noise": "^4.0.3",
+    "tailwind-merge": "^3.0.1",
+    "three": "^0.182.0",
+    "three-globe": "^2.45.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.7",
+    "@types/node": "^20.17.18",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "15.1.7",
+    "tailwindcss": "^4.0.7",
+    "typescript": "^5.7.3"
+  }
+}
