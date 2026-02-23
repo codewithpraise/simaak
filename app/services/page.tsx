@@ -9,7 +9,17 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import { servicesApproach } from "@/constants/site-data";
 import { MagneticParticles } from "@/components/ui/LazyVisuals";
 import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title: "Engineering Modules | Simaak Tech",
+    description: "Fifteen specialized engineering divisions designed for resilience, precision, and national-scale deployment. Explore our comprehensive services.",
+    openGraph: {
+        title: "Simaak Tech Services & Modules",
+        description: "Mission-Critical Engineering Modules.",
+        url: "https://simaak.vercel.app/services",
+    },
+};
 
 export default function ServicesPage() {
     return (
