@@ -42,7 +42,7 @@ export function Navbar() {
                     initial={{ y: -30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
-                    className="rounded-full transition-all duration-500 glass-white shadow-[0_2px_30px_rgba(62,139,189,0.08),0_0_0_1px_rgba(62,139,189,0.15)] border border-gold/10 mx-auto overflow-hidden"
+                    className="rounded-full transition-all duration-500 backdrop-blur-xl bg-white/70 shadow-[0_2px_30px_rgba(62,139,189,0.08),0_0_0_1px_rgba(62,139,189,0.15)] border border-gold/10 mx-auto overflow-hidden"
                 >
                     <div className="flex items-center justify-between px-8 py-0.5">
                         <Link href="/" className="flex-shrink-0 hover:opacity-80 transition-opacity">
@@ -109,7 +109,7 @@ export function Navbar() {
 
             {/* Mobile */}
             <div className="fixed top-0 left-0 right-0 z-[1000] md:hidden">
-                <div className={`flex items-center justify-between px-5 py-3.5 transition-all duration-500 ${scrolled ? "glass-white border-b border-black/[0.04]" : "bg-transparent"
+                <div className={`flex items-center justify-between px-5 py-3.5 transition-all duration-500 ${scrolled ? "backdrop-blur-xl bg-white/70 border-b border-black/[0.04]" : "bg-transparent"
                     }`}>
                     <Link href="/" className="flex items-center">
                         <Image src="/simaak logo-1.svg" alt="Simaak Tech" width={220} height={64} className="h-14 sm:h-16 w-auto" priority />

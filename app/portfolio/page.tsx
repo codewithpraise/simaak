@@ -51,7 +51,7 @@ export default function PortfolioPage() {
                 <div className="absolute top-[30%] right-[10%] w-[200px] h-[200px] bg-gold/[0.04] rounded-full blur-[80px] pointer-events-none float-anim" />
                 <div className="max-w-3xl mx-auto text-center space-y-5">
                     <Reveal><h2 className="text-2xl md:text-4xl font-display font-bold tracking-tight text-charcoal">Ready to <span className="text-gold-shine">architect</span> your solution?</h2></Reveal>
-                    <Reveal delay={0.06}><p className="text-text-secondary text-base max-w-sm mx-auto">Share your requirements and we&apos;ll design a tailored infrastructure architecture within 48 hours.</p></Reveal>
+                    <Reveal delay={0.06}><p className="text-text-secondary text-base max-w-sm mx-auto">Share your requirements and we&apos;ll design a tailored infrastructure architecture within 24 hours.</p></Reveal>
                     <Reveal delay={0.12}>
                         <MagneticButton href="/contact">Start a Conversation</MagneticButton>
                     </Reveal>

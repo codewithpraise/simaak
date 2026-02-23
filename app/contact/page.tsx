@@ -20,14 +20,14 @@ const services = [
 ];
 
 export default function ContactPage() {
-    const [form, setForm] = useState({ name: "", email: "", company: "", service: "", message: "" });
+    const [form, setForm] = useState({ name: "", email: "", company: "", service: "", message: "", country: "", phone: "" });
     const [focusedField, setFocusedField] = useState<string | null>(null);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const subject = encodeURIComponent(`${form.service || "Project Inquiry"} — ${form.company || form.name}`);
         const body = encodeURIComponent(
-            `Hi Simaak Team,\n\nName: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company || "N/A"}\nService: ${form.service || "General"}\n\n${form.message}\n\nBest regards,\n${form.name}`
+            `Hi Simaak Team,\n\nName: ${form.name}\nEmail: ${form.email}\nContact Number: ${form.phone || "N/A"}\nCountry: ${form.country || "N/A"}\nCompany: ${form.company || "N/A"}\nService: ${form.service || "General"}\n\n${form.message}\n\nBest regards,\n${form.name}`
         );
         // Open Gmail compose in a new tab — guaranteed to work in any browser
         const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info.simaak@gmail.com&su=${subject}&body=${body}`;
@@ -52,7 +52,7 @@ export default function ContactPage() {
                     <TextGenerateEffect words="Initiate Partnership" className="text-[1.75rem] sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight leading-[1.1] text-charcoal" />
                     <Reveal delay={0.3}>
                         <p className="max-w-md text-text-secondary text-base md:text-lg leading-relaxed pointer-events-auto">
-                            Fill in your details and we&apos;ll open your email client with everything pre-filled. Hit send and we&apos;ll respond within 48 hours.
+                            Fill in your details and we&apos;ll open your email client with everything pre-filled. Hit send and we&apos;ll respond within 24 hours.
                         </p>
                     </Reveal>
                 </div>
@@ -134,6 +134,24 @@ function ContactFormCard({ form, setForm, focusedField, setFocusedField, handleS
                             onFocus={() => setFocusedField("email")}
                             onBlur={() => setFocusedField(null)}
                             className={ic("email")} placeholder="email@company.com" />
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="space-y-1.5">
+                        <label className="text-[9px] font-mono text-text-muted uppercase tracking-[0.3em]">Contact Number</label>
+                        <input type="tel" value={form.phone}
+                            onChange={e => setForm({ ...form, phone: e.target.value })}
+                            onFocus={() => setFocusedField("phone")}
+                            onBlur={() => setFocusedField(null)}
+                            className={ic("phone")} placeholder="+1 (234) 567-890" />
+                    </div>
+                    <div className="space-y-1.5">
+                        <label className="text-[9px] font-mono text-text-muted uppercase tracking-[0.3em]">Country</label>
+                        <input type="text" value={form.country}
+                            onChange={e => setForm({ ...form, country: e.target.value })}
+                            onFocus={() => setFocusedField("country")}
+                            onBlur={() => setFocusedField(null)}
+                            className={ic("country")} placeholder="Country" />
                     </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

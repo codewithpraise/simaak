@@ -90,7 +90,7 @@ export default function ServicesPage() {
                 <div className="absolute top-[40%] right-[10%] w-[200px] h-[200px] bg-gold/[0.04] rounded-full blur-[80px] pointer-events-none float-anim" />
                 <div className="max-w-3xl mx-auto text-center space-y-6">
                     <Reveal><h2 className="text-2xl md:text-4xl font-display font-bold tracking-tight text-charcoal">Need a custom <span className="text-gold-shine">solution</span>?</h2></Reveal>
-                    <Reveal delay={0.06}><p className="text-text-secondary text-base md:text-lg max-w-md mx-auto">Our engineering team will design a tailored architecture for your specific requirements within 48 hours.</p></Reveal>
+                    <Reveal delay={0.06}><p className="text-text-secondary text-base md:text-lg max-w-md mx-auto">Our engineering team will design a tailored architecture for your specific requirements within 24 hours.</p></Reveal>
                     <Reveal delay={0.12}>
                         <MagneticButton href="/contact" prefetch={true}>Discuss Your Project</MagneticButton>
                     </Reveal>

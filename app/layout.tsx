@@ -31,9 +31,6 @@ export const metadata: Metadata = {
     title: "SIMAAK TECH",
     description:
         "Pakistan's leading telecommunications infrastructure provider. Network design, fiber optics, 5G deployment, and mission-critical connectivity solutions.",
-    icons: {
-        icon: "/simaak_tech_logo-removebg-preview.svg",
-    },
 };
 
 export default function RootLayout({
