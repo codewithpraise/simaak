@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                     {/* B&W Base Layer */}
                     <NextImage
-                        src="/hero-bg-tower image.jpg"
+                        src="/hero-bg-tower-image.jpg"
                         alt="Global Infrastructure"
                         fill
                         className="object-cover grayscale brightness-50"
@@ -41,7 +41,7 @@ export default function Home() {
 
                     {/* Liquid Color Reveal Component (Direct Canvas) */}
                     <LiquidMask
-                        imageSrc="/hero-bg-tower image.jpg"
+                        imageSrc="/hero-bg-tower-image.jpg"
                         className="absolute inset-0 z-10 opacity-100"
                     />
                 </div>

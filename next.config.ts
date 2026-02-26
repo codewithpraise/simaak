@@ -7,9 +7,10 @@ const nextConfig: NextConfig = {
       "framer-motion",
     ],
   },
-  // Reduce image/font overhead
+  // Disable image optimization because Hostinger's edge/VM memory limits
+  // cause 503/504 timeouts when the Sharp daemon attempts to encode AVIFs.
   images: {
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
