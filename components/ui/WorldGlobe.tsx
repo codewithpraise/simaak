@@ -132,7 +132,14 @@ export function WorldGlobe() {
         <div className="w-full h-full relative">
             <Canvas
                 camera={{ position: [0, 0, 400], fov: 45 }}
-                gl={{ antialias: true, alpha: true }}
+                dpr={[1, 1.5]}
+                gl={{
+                    antialias: false,
+                    alpha: true,
+                    powerPreference: "high-performance",
+                    stencil: false,
+                    preserveDrawingBuffer: false,
+                }}
             >
                 <ambientLight intensity={1.2} />
                 <pointLight position={[200, 200, 200]} intensity={3} color="#d4a331" />

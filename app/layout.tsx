@@ -4,6 +4,7 @@ import "./app-styles.css";
 import { ScrollToTop } from "@/components/provider/ScrollToTop";
 import { Navbar } from "@/components/ui/Navbar";
 import { ClientShell } from "@/components/provider/ClientShell";
+import { ChunkLoadBoundary } from "@/components/provider/ChunkLoadBoundary";
 import { Footer } from "@/components/ui/Footer";
 
 const cinzel = Cinzel({
@@ -90,7 +91,7 @@ export default function RootLayout({
             "@type": "ContactPoint",
             telephone: "+92 312 9187349",
             contactType: "Customer Service",
-            email: "codewithpraise@gmail.com",
+            email: "info@simaak.com",
             areaServed: "PK",
             availableLanguage: ["English", "Urdu"],
         },
@@ -112,12 +113,14 @@ export default function RootLayout({
                 />
                 <ScrollToTop />
                 <Navbar />
-                <ClientShell>
-                    <div className="min-h-[100dvh] w-full max-w-[100vw] overflow-x-hidden">
-                        {children}
-                    </div>
-                    <Footer />
-                </ClientShell>
+                <ChunkLoadBoundary>
+                    <ClientShell>
+                        <div className="min-h-[100dvh] w-full max-w-[100vw] overflow-x-hidden">
+                            {children}
+                        </div>
+                        <Footer />
+                    </ClientShell>
+                </ChunkLoadBoundary>
             </body>
         </html>
     );

@@ -186,13 +186,14 @@ export function Hero3DScene() {
                 <Canvas
                     key={key}
                     camera={{ position: [0, 0, 7], fov: 50, near: 0.1, far: 50 }}
-                    dpr={[1, 2]}
+                    dpr={[1, 1.5]}
                     gl={{
-                        antialias: true,
+                        antialias: false,
                         alpha: true,
                         powerPreference: "high-performance",
                         failIfMajorPerformanceCaveat: false,
                         stencil: false,
+                        preserveDrawingBuffer: false,
                         depth: true,
                     }}
                     style={{ background: "transparent", pointerEvents: "none" }}

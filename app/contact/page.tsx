@@ -8,7 +8,7 @@ import { Mail, Send, Clock, Globe, ExternalLink, CheckCircle2 } from "lucide-rea
 import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 
 const info = [
-    { icon: Mail, label: "Email", value: "info.simaak@gmail.com", href: "mailto:info.simaak@gmail.com" },
+    { icon: Mail, label: "Email", value: "info@simaak.com", href: "mailto:info@simaak.com" },
     { icon: Clock, label: "Response Time", value: "Under 24 Hours" },
     { icon: Globe, label: "Availability", value: "24/7 Operations Ready" },
 ];
@@ -30,7 +30,7 @@ export default function ContactPage() {
             `Hi Simaak Team,\n\nName: ${form.name}\nEmail: ${form.email}\nContact Number: ${form.phone || "N/A"}\nCountry: ${form.country || "N/A"}\nCompany: ${form.company || "N/A"}\nService: ${form.service || "General"}\n\n${form.message}\n\nBest regards,\n${form.name}`
         );
         // Open Gmail compose in a new tab — guaranteed to work in any browser
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info.simaak@gmail.com&su=${subject}&body=${body}`;
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info@simaak.com&su=${subject}&body=${body}`;
         window.open(gmailUrl, "_blank");
     };
 

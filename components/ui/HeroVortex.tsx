@@ -178,11 +178,13 @@ export function HeroVortex() {
                 <Canvas
                     key={key}
                     camera={{ position: [0, 0, 12], fov: 45, near: 0.1, far: 100 }}
-                    dpr={[1, 2]}
+                    dpr={[1, 1.5]}
                     gl={{
-                        antialias: true,
+                        antialias: false,
                         alpha: true,
                         powerPreference: "high-performance",
+                        preserveDrawingBuffer: false,
+                        stencil: false,
                     }}
                     onCreated={({ gl }) => {
                         gl.domElement.addEventListener("webglcontextlost", (e) => {
