@@ -29,7 +29,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://simaak.vercel.app"),
+    metadataBase: new URL("https://www.simaak.com"),
     title: {
         default: "Simaak Tech | Premier Telecommunications Infrastructure",
         template: "%s | Simaak Tech",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Simaak Tech (Private) Limited",
         description: "Architecting the Future of Connectivity.",
-        url: "https://simaak.vercel.app",
+        url: "https://www.simaak.com",
         siteName: "Simaak Tech",
         locale: "en_PK",
         type: "website",
@@ -78,8 +78,8 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "Simaak Tech (Private) Limited",
-        url: "https://simaak.vercel.app",
-        logo: "https://simaak.vercel.app/icon.svg",
+        url: "https://www.simaak.com",
+        logo: "https://www.simaak.com/icon.svg",
         description: "Pakistan's leading telecommunications infrastructure provider specializing in fiber optics, 5G deployment, and critical network engineering.",
         address: {
             "@type": "PostalAddress",

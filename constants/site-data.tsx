@@ -29,7 +29,7 @@ export const solutionDomains = [
         desc: "High-capacity optical backbone architecture with wavelength-division multiplexing, passive optical networks, and long-haul fiber engineering for maximum throughput.",
         tags: ["DWDM", "xPON", "FTTX", "Fiber Optic"],
         capability: "We engineer resilient fiber-optic pathways designed for terabit-scale data transport across diverse terrain.",
-        imagePath: "/OPTICAL TRANSPORT NETWORKS.jpg"
+        imagePath: "/optical-transport-networks.jpg"
     },
     {
         title: "5G & Wireless Core Systems",
@@ -37,7 +37,7 @@ export const solutionDomains = [
         desc: "End-to-end wireless infrastructure from macro-site deployment to small cell densification, massive MIMO optimization, and private 5G network architecture.",
         tags: ["5G NR", "MIMO", "Small Cells", "Private LTE"],
         capability: "Complete air-interface engineering for carrier-grade and enterprise wireless connectivity.",
-        imagePath: "/5G & wireless core system.jpg"
+        imagePath: "/5g-and-wireless-core-system.jpg"
     },
     {
         title: "Intelligent Power Systems",
@@ -45,7 +45,7 @@ export const solutionDomains = [
         desc: "Hybrid solar-battery-grid configurations with intelligent load balancing, remote telemetry, and predictive maintenance for continuous uptime at every node.",
         tags: ["Solar", "UPS", "Hybrid Energy", "Remote Monitoring"],
         capability: "Sustainable power architecture that keeps infrastructure operational in the most challenging environments.",
-        imagePath: "/intelligence power system.jpg"
+        imagePath: "/intelligence-power-system.jpg"
     },
     {
         title: "Secure Enterprise Networks",
@@ -53,7 +53,7 @@ export const solutionDomains = [
         desc: "Software-defined campus and wide-area networks with layered cybersecurity, cloud-connect architectures, and zero-trust access frameworks.",
         tags: ["SD-WAN", "Cybersecurity", "Cloud", "Zero Trust"],
         capability: "Enterprise-grade network ecosystems built for resilience, compliance, and seamless scalability.",
-        imagePath: "/secure enterprise networks.jpg"
+        imagePath: "/secure-enterprise-networks.jpg"
     },
 ];
 

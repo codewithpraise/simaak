@@ -48,7 +48,7 @@ export const serviceData: ServiceItem[] = [
             "Advanced Propagation Modeling"
         ],
         process: ["RF Simulation", "Topographical Audit", "Topology Synthesis", "Final Commissioning Blueprint"],
-        imagePath: "/network design image.jpg"
+        imagePath: "/network-design-image.jpg"
     },
     {
         slug: "fixed-network-solutions",
@@ -75,7 +75,7 @@ export const serviceData: ServiceItem[] = [
             "DWDM Wavelength Management"
         ],
         process: ["Path Diversity Mapping", "Optical Engineering", "Automated Splicing", "Spectral Calibration"],
-        imagePath: "/fixed network image.jpg"
+        imagePath: "/fixed-network-image.jpg"
     },
     {
         slug: "wireless-network-solutions",
@@ -102,7 +102,7 @@ export const serviceData: ServiceItem[] = [
             "Rapid Deployment Capabilities"
         ],
         process: ["Site Acquisition", "5G Core Integration", "MIMO Optimization", "Spectrum Analysis"],
-        imagePath: "/wireless image.jpg"
+        imagePath: "/wireless-image.jpg"
     },
     {
         slug: "network-construction-deployment",
@@ -129,7 +129,7 @@ export const serviceData: ServiceItem[] = [
             "Real-Time PMO Tracking"
         ],
         process: ["PMO Strategy", "Tower Structural Engineering", "Site Commissioning", "Environmental Stress Testing"],
-        imagePath: "/construction image.jpg"
+        imagePath: "/construction-image.jpg"
     },
     {
         slug: "civil-works-site-preparation",
@@ -156,7 +156,7 @@ export const serviceData: ServiceItem[] = [
             "Access Road Construction"
         ],
         process: ["Geological Analysis", "Foundation Engineering", "Site Acquisition Strategy", "Structural Reinforcement"],
-        imagePath: "/civil works image.jpg"
+        imagePath: "/civil-works-image.jpg"
     },
     {
         slug: "enterprise-it-connectivity",
@@ -183,7 +183,7 @@ export const serviceData: ServiceItem[] = [
             "Zero-Downtime Architecture"
         ],
         process: ["SDN Strategy", "Hybrid Cloud Integration", "Security Perimeter Design", "Scalability Audit"],
-        imagePath: "/enterprise IT image.jpg"
+        imagePath: "/enterprise-it-image.jpg"
     },
     {
         slug: "power-alternate-energy",
@@ -210,7 +210,7 @@ export const serviceData: ServiceItem[] = [
             "Remote Power Analytics"
         ],
         process: ["Load Audit", "Hybrid Energy Synthesis", "UPS Integration", "Remote Power Monitoring"],
-        imagePath: "/power energy image.jpg"
+        imagePath: "/power-energy-image.jpg"
     },
     {
         slug: "operations-maintenance",
@@ -237,7 +237,7 @@ export const serviceData: ServiceItem[] = [
             "Proactive Maintenance Cycles"
         ],
         process: ["24/7 NOC Surveillance", "Preventive Maintenance Cycle", "Rapid Field Recovery", "Optimization Audits"],
-        imagePath: "/ops maint image.jpg"
+        imagePath: "/ops-maint-image.jpg"
     },
     {
         slug: "nss-bss-equipment",
@@ -264,7 +264,7 @@ export const serviceData: ServiceItem[] = [
             "Certified Platform Expertise"
         ],
         process: ["Core Logic Configuration", "HLR/MSC Integration", "Vendor Interoperability Testing", "System Validation"],
-        imagePath: "/nss bss image.jpg"
+        imagePath: "/nss-bss-image.jpg"
     },
     {
         slug: "security-surveillance-systems",
@@ -291,7 +291,7 @@ export const serviceData: ServiceItem[] = [
             "24/7 Security Monitoring"
         ],
         process: ["Threat Assessment", "System Architecture", "Hardware Deployment", "Monitoring Integration"],
-        imagePath: "/security systems image.jpg"
+        imagePath: "/security-systems-image.jpg"
     },
     {
         slug: "testing-equipment-calibration",
@@ -318,7 +318,7 @@ export const serviceData: ServiceItem[] = [
             "Drive Test Analytics"
         ],
         process: ["Spectral Driving", "Optical Calibration", "Load Testing", "Data Analysis & Synthesis"],
-        imagePath: "/testing image.jpg"
+        imagePath: "/testing-image.jpg"
     },
     {
         slug: "professional-consulting",
@@ -345,7 +345,7 @@ export const serviceData: ServiceItem[] = [
             "Regulatory Compliance Advisory"
         ],
         process: ["Architecture Audit", "Strategic Roadmap Synthesis", "Financial Optimization", "Compliance Verification"],
-        imagePath: "/consulting image.jpg"
+        imagePath: "/consulting-image.jpg"
     },
     {
         slug: "rf-propagation-coverage",
@@ -372,7 +372,7 @@ export const serviceData: ServiceItem[] = [
             "Frequency Reuse Optimization"
         ],
         process: ["Propagation Modeling", "Coverage Prediction", "Interference Analysis", "Optimization Report"],
-        imagePath: "/RF propagation image.jpg"
+        imagePath: "/rf-propagation-image.jpg"
     },
     {
         slug: "microwave-backhaul-engineering",
@@ -399,7 +399,7 @@ export const serviceData: ServiceItem[] = [
             "Regulatory Frequency Coordination"
         ],
         process: ["Link Budget Analysis", "Frequency Coordination", "Path Survey", "Link Commissioning"],
-        imagePath: "/microwave image.jpg"
+        imagePath: "/microwave-image.jpg"
     },
     {
         slug: "antenna-systems-tower-solutions",
@@ -426,6 +426,6 @@ export const serviceData: ServiceItem[] = [
             "Antenna Pattern Optimization"
         ],
         process: ["Antenna Selection", "Tower Structural Analysis", "MIMO Array Design", "Installation & Alignment"],
-        imagePath: "/antenna image.jpg"
+        imagePath: "/antenna-image.jpg"
     }
 ];

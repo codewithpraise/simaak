@@ -188,7 +188,7 @@ export default function Home() {
                         </Reveal>
                         <Reveal delay={0.1} className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
                             <NextImage
-                                src="/engineering excellence image.jpg"
+                                src="/engineering-excellence-image.jpg"
                                 alt="Engineering Excellence"
                                 fill
                                 className="object-cover hover:scale-105 transition-all duration-1000"

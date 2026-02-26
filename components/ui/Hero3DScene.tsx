@@ -70,7 +70,7 @@ function NetworkNodes({ count = 30 }: { count?: number }) {
 
     return (
         <instancedMesh ref={meshRef} args={[undefined, undefined, count]}>
-            <sphereGeometry args={[1, 12, 12]} /> {/* Slightly better geo, low count */}
+            <sphereGeometry args={[1, 8, 8]} /> {/* Lower segment count */}
             <meshBasicMaterial color={GOLD} transparent opacity={0.8} />
         </instancedMesh>
     );
@@ -186,7 +186,7 @@ export function Hero3DScene() {
                 <Canvas
                     key={key}
                     camera={{ position: [0, 0, 7], fov: 50, near: 0.1, far: 50 }}
-                    dpr={[1, 1.5]}
+                    dpr={typeof window !== "undefined" && window.innerWidth < 768 ? 1 : [1, 1.5]}
                     gl={{
                         antialias: false,
                         alpha: true,

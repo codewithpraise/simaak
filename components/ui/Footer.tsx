@@ -51,7 +51,7 @@ export function Footer() {
                         <div className="space-y-2.5 text-text-secondary text-sm">
                             <div className="flex items-center gap-2.5">
                                 <div className="p-1.5 rounded-md bg-gold-dim"><Mail className="w-3 h-3 text-gold/50" /></div>
-                                <a href="mailto:info.simaak@gmail.com" className="link-glow">info.simaak@gmail.com</a>
+                                <a href="mailto:info@simaak.com" className="link-glow">info@simaak.com</a>
                             </div>
                         </div>
                     </div>

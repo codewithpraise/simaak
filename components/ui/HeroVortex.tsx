@@ -178,7 +178,7 @@ export function HeroVortex() {
                 <Canvas
                     key={key}
                     camera={{ position: [0, 0, 12], fov: 45, near: 0.1, far: 100 }}
-                    dpr={[1, 1.5]}
+                    dpr={typeof window !== "undefined" && window.innerWidth < 768 ? 1 : [1, 1.5]}
                     gl={{
                         antialias: false,
                         alpha: true,
