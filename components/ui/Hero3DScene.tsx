@@ -150,14 +150,13 @@ function PointerTracker() {
 }
 
 /* ── Main Scene ── */
-function Scene() {
-    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-    const nodeCount = isMobile ? 15 : 30; // Reduced count for stability
+function Scene({ isMobile }: { isMobile: boolean }) {
+    const nodeCount = isMobile ? 15 : 30;
 
     return (
         <>
             <PointerTracker />
-            <ambientLight intensity={1.5} /> {/* More light */}
+            <ambientLight intensity={1.5} />
             <pointLight position={[10, 10, 10]} intensity={1} color={GOLD} />
             <fog attach="fog" args={[CREAM.getHex(), 5, 20]} />
             <NetworkNodes count={nodeCount} />
@@ -169,6 +168,11 @@ function Scene() {
 export function Hero3DScene() {
     const [contextLost, setContextLost] = useState(false);
     const [key, setKey] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
 
     useEffect(() => {
         if (contextLost) {
@@ -181,12 +185,12 @@ export function Hero3DScene() {
     }, [contextLost]);
 
     return (
-        <div className="absolute inset-0 z-0 overflow-hidden" style={{ opacity: 1 }}> {/* Full opacity */}
+        <div className="absolute inset-0 z-0 overflow-hidden" style={{ opacity: 1 }}>
             {!contextLost && (
                 <Canvas
                     key={key}
                     camera={{ position: [0, 0, 7], fov: 50, near: 0.1, far: 50 }}
-                    dpr={typeof window !== "undefined" && window.innerWidth < 768 ? 1 : [1, 1.5]}
+                    dpr={isMobile ? 1 : [1, 1.5]}
                     gl={{
                         antialias: false,
                         alpha: true,
@@ -205,7 +209,7 @@ export function Hero3DScene() {
                         });
                     }}
                 >
-                    <Scene />
+                    <Scene isMobile={isMobile} />
                 </Canvas>
             )}
         </div>

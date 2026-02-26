@@ -128,8 +128,7 @@ function ConnectivityLines({ count = 40 }) {
     );
 }
 
-function Scene() {
-    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+function Scene({ isMobile }: { isMobile: boolean }) {
     const particleCount = isMobile ? 800 : 2500;
     const lineCount = isMobile ? 15 : 40;
 
@@ -151,6 +150,7 @@ function Scene() {
 export function HeroVortex() {
     const [contextLost, setContextLost] = useState(false);
     const [key, setKey] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
 
     const onPointerMove = useCallback((e: { clientX: number; clientY: number }) => {
         pointer.x = (e.clientX / window.innerWidth) * 2 - 1;
@@ -158,6 +158,7 @@ export function HeroVortex() {
     }, []);
 
     useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
         window.addEventListener("pointermove", onPointerMove, { passive: true });
         return () => window.removeEventListener("pointermove", onPointerMove);
     }, [onPointerMove]);
@@ -178,7 +179,7 @@ export function HeroVortex() {
                 <Canvas
                     key={key}
                     camera={{ position: [0, 0, 12], fov: 45, near: 0.1, far: 100 }}
-                    dpr={typeof window !== "undefined" && window.innerWidth < 768 ? 1 : [1, 1.5]}
+                    dpr={isMobile ? 1 : [1, 1.5]}
                     gl={{
                         antialias: false,
                         alpha: true,
@@ -193,10 +194,9 @@ export function HeroVortex() {
                         });
                     }}
                 >
-                    <Scene />
+                    <Scene isMobile={isMobile} />
                 </Canvas>
             )}
-            {/* Subtle Gradient Mask — almost completely transparent center for maximal WebGL impact */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#faf9f6_100%)] pointer-events-none" />
             <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#faf9f6]/90 to-transparent pointer-events-none z-10" />
         </div>
