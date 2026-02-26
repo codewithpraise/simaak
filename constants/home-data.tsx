@@ -5,12 +5,12 @@ import {
 import React from "react";
 
 export const featuredServices = [
-    { title: "Network Design", description: "Strategic RF engineering and topology mapping for mission-critical infrastructure.", icon: <Globe className="w-5 h-5" />, slug: "network-design-planning", imagePath: "/network design image.jpg" },
-    { title: "Wireless Systems", description: "5G core integration and cellular deployment with zero-latency architecture.", icon: <Radio className="w-5 h-5" />, slug: "wireless-network-solutions", imagePath: "/wireless image.jpg" },
-    { title: "Fiber Optic", description: "End-to-end FTTH/FTTX deployment with DWDM high-capacity optical transport.", icon: <Layers className="w-5 h-5" />, slug: "fixed-network-solutions", imagePath: "/fixed network image.jpg" },
-    { title: "RF Propagation", description: "Advanced signal modeling with terrain-aware algorithms and interference mitigation.", icon: <Zap className="w-5 h-5" />, slug: "rf-propagation-coverage", imagePath: "/RF propagation image.jpg" },
-    { title: "Microwave Backhaul", description: "High-capacity point-to-point links delivering fiber-like performance over the air.", icon: <Signal className="w-5 h-5" />, slug: "microwave-backhaul-engineering", imagePath: "/microwave image.jpg" },
-    { title: "Operations", description: "Continuous network surveillance and proactive maintenance for maximum uptime.", icon: <Cpu className="w-5 h-5" />, slug: "operations-maintenance", imagePath: "/ops maint image.jpg" },
+    { title: "Network Design", description: "Strategic RF engineering and topology mapping for mission-critical infrastructure.", icon: <Globe className="w-5 h-5" />, slug: "network-design-planning", imagePath: "/network-design-image.jpg" },
+    { title: "Wireless Systems", description: "5G core integration and cellular deployment with zero-latency architecture.", icon: <Radio className="w-5 h-5" />, slug: "wireless-network-solutions", imagePath: "/wireless-image.jpg" },
+    { title: "Fiber Optic", description: "End-to-end FTTH/FTTX deployment with DWDM high-capacity optical transport.", icon: <Layers className="w-5 h-5" />, slug: "fixed-network-solutions", imagePath: "/fixed-network-image.jpg" },
+    { title: "RF Propagation", description: "Advanced signal modeling with terrain-aware algorithms and interference mitigation.", icon: <Zap className="w-5 h-5" />, slug: "rf-propagation-coverage", imagePath: "/rf-propagation-image.jpg" },
+    { title: "Microwave Backhaul", description: "High-capacity point-to-point links delivering fiber-like performance over the air.", icon: <Signal className="w-5 h-5" />, slug: "microwave-backhaul-engineering", imagePath: "/microwave-image.jpg" },
+    { title: "Operations", description: "Continuous network surveillance and proactive maintenance for maximum uptime.", icon: <Cpu className="w-5 h-5" />, slug: "operations-maintenance", imagePath: "/ops-maint-image.jpg" },
 ];
 
 export const stats = [

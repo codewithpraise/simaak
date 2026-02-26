@@ -58,7 +58,7 @@ export function Footer() {
                 </div>
 
                 <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
-                    <span className="text-[10px] text-text-muted">&copy; {new Date().getFullYear()} Simaak Technologies. All rights reserved.</span>
+                    <span className="text-[10px] text-text-muted" suppressHydrationWarning>&copy; {new Date().getFullYear()} Simaak Technologies. All rights reserved.</span>
                     <div className="flex items-center gap-1.5">
                         <div className="w-1.5 h-1.5 rounded-full bg-gold gold-dot-pulse" />
                         <span className="text-[8px] font-mono text-gold/40 tracking-[0.3em] uppercase">Systems Operational</span>
